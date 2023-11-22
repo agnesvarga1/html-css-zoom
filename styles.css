@@ -7,4 +7,38 @@
 .web-app {
   height: 100vh;
   background-color: #000;
+  padding-top: 20px;
+  position: relative;
+}
+
+.web-app .users {
+  margin: 0 auto;
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 0.8rem;
+  column-gap: 5px;
+}
+
+.web-app .users .single-user-card {
+  flex-basis: calc(100% / 7.5);
+  border: 1px solid #fff;
+  height: calc(100vh / 6);
+}
+
+.icon-bar {
+  min-height: 2rem;
+  background-color: darkgray;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-bar ul {
+  display: flex;
+  list-style-type: none;
 }
