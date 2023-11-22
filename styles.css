@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .web-app {
   height: 100vh;
   background-color: #000;
@@ -39,8 +41,8 @@ img {
 
 .icon-bar {
   min-height: 2rem;
-  padding: 5px 10px;
-  background-color: darkgray;
+
+  background-color: #222222;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -52,19 +54,44 @@ img {
   display: flex;
   list-style-type: none;
   text-align: center;
+  column-gap: 5px;
 }
 
 .icon-bar ul li {
   cursor: pointer;
   color: white;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .icon-bar svg {
   display: block;
   fill: white;
+  height: 1.5em;
 }
 
 .icon-bar span {
   font-size: 10px;
   margin-top: 2px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#green {
+  fill: green;
+}
+
+.exit {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  font-weight: 500;
+  background-color: #4a4a4a;
+  padding: 2px;
+}
+
+.exit span {
+  color: red;
 }
