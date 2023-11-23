@@ -14,19 +14,18 @@ html {
 }
 
 .web-app .users {
-  width: calc(100%-5%);
   height: 90vh;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  column-gap: 5px;
+  gap: 5px;
 
   overflow: auto;
 }
 
 .web-app .users .single-user-card {
-  width: calc((100% / 7.5));
   border: 1px solid #fff;
   height: calc((100vh / 6.4));
   position: relative;
@@ -50,13 +49,13 @@ img {
 
 .icon-bar {
   min-height: 2rem;
-
   background-color: #222222;
   position: absolute;
   width: 100%;
   bottom: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .icon-bar ul {
